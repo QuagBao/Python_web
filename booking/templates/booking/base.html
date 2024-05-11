@@ -22,7 +22,9 @@
   <!--body-->
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{% url 'home' %}">CineBooking</a>
+      <a class="navbar-brand" href="{% url 'home' %}"
+        ><img id="web-icon" src="{% static 'img/logo.png' %}"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -44,7 +46,9 @@
           </li>
         </ul>
         <div class="form-inline my-2 my-lg-0">
-          <a href="{% url 'login' %}" class="btn btn-warning"><img id="user-icon" src="{% static 'img/user.png' %}"/></a>
+          <a href="{% url 'login' %}" class="btn btn-warning"
+            ><img id="user-icon" src="{% static 'img/user.png' %}"
+          /></a>
         </div>
       </div>
     </nav>
